@@ -26,3 +26,11 @@ affiliation <- electionsBR::voter_affiliation(party  = "NOVO", uf = "DF")
 
 senador <- party_mun_zone_fed[party_mun_zone_fed$DESCRICAO_CARGO == "Senador",]
 presidente <- party_mun_zone_fed[party_mun_zone_fed$DESCRICAO_CARGO == "Presidente",]
+
+
+#BETS
+install.packages("BETS")
+BETS::BETS.addin_pt()
+
+BETS::dashboard()
+
